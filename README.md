@@ -1,15 +1,15 @@
 # Stake.us-Chat-Mention
 This Chrome browser extension will monitor the Stake.us chat module for mentions of your @username. It will produce an alert in the top left side of your screen regardless of what Stake.us webpage you are on.
 
-##How to Install the Stake.us Chat Mention Chrome Extension
+## How to Install the Stake.us Chat Mention Chrome Extension
 
-###Step 1: Downloading the Extension
+### Step 1: Downloading the Extension
 
     -Navigate to the Releases section of this repository.
     -Download the latest release package (ZIP file) by clicking on the link.
     -Save the ZIP file to your computer.
 
-###Step 2: Unzipping the Extension Package
+### Step 2: Unzipping the Extension Package
 
     -Locate the downloaded ZIP file in your computer's file explorer.
     -Right-click on the ZIP file.
@@ -17,7 +17,7 @@ This Chrome browser extension will monitor the Stake.us chat module for mentions
     -Choose a destination folder to extract the contents of the ZIP file.
     -Click "Extract" to unzip the files.
 
-###Step 3: Loading the Extension into Chrome
+### Step 3: Loading the Extension into Chrome
 
     -Open Google Chrome browser on your computer.
     -In the address bar, type chrome://extensions/ and press Enter.
@@ -28,7 +28,7 @@ This Chrome browser extension will monitor the Stake.us chat module for mentions
     -The Stake.us Chat Mention extension should now appear in the list of installed extensions.
     -Optionally, you can pin the extension to the browser toolbar for easy access.
 
-###Step 4: Using the Extension
+### Step 4: Using the Extension
 
     -Open Stake.us website in Google Chrome by navigating to https://stake.us/.
     -THIS EXTENSION WILL ONLY WORK WHEN NYOU ARE LOGGED IN AND THE CHAT MODULE IS AVAILABLE
