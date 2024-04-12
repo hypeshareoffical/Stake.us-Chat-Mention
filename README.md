@@ -5,7 +5,7 @@ This Chrome browser extension will monitor the Stake.us chat module for mentions
 
 ### Step 1: Downloading the Extension
 
-     - Navigate to the Releases section of this repository.
+     +Navigate to the Releases section of this repository.
      - Download the latest release package (ZIP file) by clicking on the link.
      - Save the ZIP file to your computer.
 
