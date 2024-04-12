@@ -1,0 +1,64 @@
+/* styles.css */
+/* Popup window sizing - adjust width and height as needed */
+html, body {
+    width: 300px; /* Set a specific width to make the popup more square */
+    height: auto; /* Adjust height automatically based on content */
+    margin: 0;
+    padding: 0;
+    background-color: #0f212e;
+}
+
+#popup-content {
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Reduced to better fit within the specified popup size */
+}
+
+input[type="text"] {
+    width: 100%; /* Make input width responsive to the container size */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50; /* A nice green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f4553;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    max-width: 300px; /* Limit the width to prevent overflow */
+    padding: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow */
+    z-index: 1000;
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.custom-alert + .custom-alert {
+    margin-top: 10px; /* Add space between alerts */
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
