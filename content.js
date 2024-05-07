@@ -82,32 +82,51 @@ function createInPageAlert(mentioner) {
         document.body.appendChild(alertsContainer);
     }
 
-    // Create the alert message
+    // Create the alert message using the new template
     const alertDiv = document.createElement('div');
-    alertDiv.className = 'custom-alert'; // Use for styling
-    // Add timestamp to the alert text content
-    const timeStamp = new Date().toLocaleTimeString();
-    alertDiv.innerHTML = `CHAT MENTION!<br>Someone mentioned you: <strong>@${mentioner}</strong><br><span style="font-size: 0.8em; color: #6c757d;">(${timeStamp})</span>`;
+    alertDiv.className = 'message'; // Use for styling based on new template
+    alertDiv.innerHTML = `
+        <div class="title">Mentioned!</div>
+        <p><strong>@${mentioner}</strong> mentioned your degenerate name...</p>
+    `;
 
-    // Apply styles to the alertDiv
-    alertDiv.style.backgroundColor = '#d4edda';
-    alertDiv.style.color = '#155724';
-    alertDiv.style.padding = '20px';
-    alertDiv.style.marginTop = '10px'; // Increase space between alerts
+    // Apply new template styles to the alertDiv
+    alertDiv.style.background = '#0f212e';
+    alertDiv.style.color = '#fff';
+    alertDiv.style.padding = '30px';
     alertDiv.style.borderRadius = '5px';
-    alertDiv.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
-    alertDiv.style.display = 'flex';
-    alertDiv.style.flexDirection = 'column'; // Stack elements vertically
+    alertDiv.style.boxShadow = '0 0 8px #4CAF50';
+    alertDiv.style.marginTop = '10px'; // Increase space between alerts
 
-    // Add close button
+    // Add the styled title
+    let title = alertDiv.querySelector('.title');
+    title.style.padding = '.5em 2em';
+    title.style.background = '#4CAF50';
+    title.style.borderRadius = '.75em';
+    title.style.textTransform = 'uppercase';
+    title.style.display = 'block';
+    title.style.textAlign = 'center';
+    title.style.fontWeight = 'bold';
+    title.style.letterSpacing = '.1em';
+    title.style.color = '#fff';
+
+    // Add close button (optional based on new design principles)
     const closeButton = document.createElement('span');
     closeButton.textContent = 'X';
     closeButton.style.cursor = 'pointer';
-    closeButton.style.marginTop = '10px'; // Increase space between timestamp and clear button
+    closeButton.style.position = 'absolute';
+    closeButton.style.top = '20px'; // Adjust top margin to add space from the top border
+    closeButton.style.right = '20px';
+    closeButton.style.color = '#fff';
+    closeButton.style.marginRight = '10px'; // Add spacing between close button and border
     closeButton.addEventListener('click', () => {
         alertDiv.remove();
     });
     alertDiv.appendChild(closeButton);
+
+    // Add spacing between header text and body text
+    const bodyText = alertDiv.querySelector('p');
+    bodyText.style.marginTop = '20px'; // Adjust the spacing as needed
 
     // Prepend the new alert to the alerts container to stack them vertically
     if (alertsContainer.firstChild) {
@@ -117,7 +136,7 @@ function createInPageAlert(mentioner) {
     }
 
     // Ensure that no more than 3 alerts are visible
-    const allAlerts = alertsContainer.getElementsByClassName('custom-alert');
+    const allAlerts = alertsContainer.getElementsByClassName('message');
     if (allAlerts.length > 3) {
         allAlerts[allAlerts.length - 1].remove(); // Remove the oldest alert
     }
