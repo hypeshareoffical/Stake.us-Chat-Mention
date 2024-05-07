@@ -32,7 +32,7 @@ This Chrome browser extension will monitor the Stake.us chat module for mentions
 
      - Open Stake.us website in Google Chrome by navigating to https://stake.us/.
      - THIS EXTENSION WILL ONLY WORK WHEN NYOU ARE LOGGED IN AND THE CHAT MODULE IS AVAILABLE
-     - (The chat module is not available when logged out, its available even nwhen you dont have it visible while logged it, so in short, make sure you are logged in to use the extension!)
+     - (The chat module is not available when logged out, its available even when you dont have it visible while logged it, so in short, make sure you are logged in to use the extension!)
      - Locate the Stake.us Chat Mention extension icon in the top right corner of the browser toolbar.
      - Click on the extension icon to open the extension popup.
      - In the extension popup, enter your Stake.us username (beginning with "@") in the provided text field.
